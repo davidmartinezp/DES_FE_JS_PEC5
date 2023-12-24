@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ecommerce';
+  selectedOption: string = 'Inicio';
+
+  onNavbarOptionSelected(option: string): void {
+    this.selectedOption = option;
+  }
 }
 
