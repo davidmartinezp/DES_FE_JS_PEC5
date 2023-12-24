@@ -1,5 +1,5 @@
 <div>
-    <div [ngClass]="{'no-on-sale': !article?.isOnSale}" class = "product">
+    <div [ngClass]="{'no-on-sale': !article?.isOnSale}" class="product">
         <h2>{{ article?.name }}</h2>
         <div class="imageContainer">
             <img [src]="article?.imageUrl" alt="Imagen del artículo">
@@ -11,9 +11,8 @@
             <p>Cantidad en el carrito: {{ article?.quantityInCart }}</p>
             <div class="buttons">
                 <button (click)="incrementQuantity()">Añadir</button>
-                <button (click)="decrementQuantity()" [disabled]="article?.quantityInCart === 0">Borrar</button>    
+                <button (click)="decrementQuantity()" [disabled]="article?.quantityInCart === 0">Borrar</button>
             </div>
         </div>
     </div>
- </div>
-  
+</div>
